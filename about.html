@@ -3,7 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Me - Gurdeep Singh</title>
+  <head>
+    <title>About Me - Gurdeep Singh | Singer and Music Composer</title>
+    <meta name="description" content="Learn more about Gurdeep Singh, an Indian artist and music composer based in Dehradun. Explore his journey, achievements, and musical expertise.">
+    <meta name="keywords" content="Gurdeep Singh, singer, music composer, Indian artist, Dehradun, Indian Idol, music">
+    <meta name="author" content="Gurdeep Singh">
+    <meta property="og:title" content="About Me - Gurdeep Singh | Singer and Music Composer">
+    <meta property="og:description" content="Learn more about Gurdeep Singh, an Indian artist and music composer based in Dehradun. Explore his journey, achievements, and musical expertise.">
+    <meta property="og:image" content="https://gurdeepsingh.live/img/gallery1.jpg">
+    <meta property="og:url" content="https://gurdeepsingh.live/about.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="About Me - Gurdeep Singh | Singer and Music Composer">
+    <meta name="twitter:description" content="Learn more about Gurdeep Singh, an Indian artist and music composer based in Dehradun. Explore his journey, achievements, and musical expertise.">
+    <meta name="twitter:image" content="https://gurdeepsingh.live/img/gallery1.jpg">
+    <link rel="canonical" href="https://gurdeepsingh.live/about.html">
+  </head>
+  
   <link rel="stylesheet" href="./css/style.css">
   <!-- Fancybox js -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
@@ -28,13 +43,65 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <style>
     /* Custom Styles */
+ 
+           @import url("https://fonts.googleapis.com/css?  family=Lora:400,400i,700,700i");
+      
+
+           .patterns {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2e4057;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+}
+
+svg text {
+  font-family: Lora;
+  letter-spacing: 10px;
+  stroke: #ffa5d8;
+  font-size: 150px;
+  font-weight: 700;
+  stroke-width: 3;
+  animation: textAnimate 5s infinite alternate;
+}
+
+@keyframes textAnimate {
+  0% {
+    stroke-dasharray: 0 50%;
+    stroke-dashoffset: 20%;
+    fill: hsl(189, 68%, 75%);
+  }
+
+  100% {
+    stroke-dasharray: 50% 0;
+    stroke-dashoffset: -20%;
+    fill: hsla(189, 68%, 75%, 0%);
+  }
+}
+
+@media (max-width: 768px) {
+  svg text {
+    font-size: 10vw; /* Adjust the font size for responsiveness on mobile devices */
+  }
+}
+
+
+
+
     p{
         color: black;
     }
     .about-img{
-       object-fit: cover;
-  width: 60%;
-  
+      display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 50%; /* Adjust the value as needed */
+  height: auto;
   border-radius: 10%;
     }
     body {
@@ -184,6 +251,37 @@
         border-radius: 0;
       }
     }
+    
+    h2{
+    position: relative;
+    font-size: 14vw;
+    color: #252839;
+    -webkit-text-stroke: 0.3vw #383d52;
+    text-transform: uppercase;
+    
+}
+h2::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #01fe87;
+    -webkit-text-stroke: 0vw #383d52;
+    border-right: 2px solid #01fe87;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+
+}
+@keyframes animate{
+    0%,10%,100%{
+        width: 0;
+    }
+    70%,90%{
+        width: 100%;
+    }
+}
   </style>
 </head>
 <body>
@@ -237,34 +335,75 @@
 
   <div class="container">
     <div class="about-section">
-      <h2 style="animation-delay: 0.2s; color: black; text-transform: uppercase;"> Gurdeep Singh</h2>
+      <h2 data-text="Gurdeep Singh" style="text-align: center;">Gurdeep Singh</h2>
       <div class="row">
         <div class="col-md-6 offset-md-3">
           <img src="./img/gallery1.jpg" alt="Gurdeep Singh" class="about-img" style="animation: slide-up 1s ease-out; animation-delay: 0.4s;">
-          <p style="animation: slide-up 1s ease-out; animation-delay: 0.6s;">Gurdeep Singh is an Indian artist and music composer based in Dehradun. He gained recognition as one of the finalists in Indian Idol Season 11.</p>
+          <br>
+          <p style="animation: slide-up 1s ease-out; animation-delay: 0.6s;">Gurdeep Singh is an immensely talented and passionate Indian artist and music composer hailing from the picturesque city of Dehradun. With his remarkable vocal abilities and exceptional musical skills, he has captivated audiences nationwide. His journey to success reached new heights when he emerged as one of the esteemed finalists in the renowned singing competition, Indian Idol Season 11. Gurdeep's soulful renditions and charismatic stage presence have left a lasting impression on music enthusiasts across the country. As an artist, he constantly strives to push boundaries and create music that resonates with the hearts of his listeners. With his immense talent and dedication, Gurdeep Singh continues to make waves in the music industry, leaving an indelible mark as a true maestro of his craft.</p>
+          <a href="contact.html" style="color: rgb(226, 173, 0); font-size: 1.5em; text-decoration: none; animation: slide-up 1s ease-out; animation-delay: 2s;">CONTACT ME &nbsp;<i class="fa-solid fa-arrow-right"></i></a>
         </div>
       </div>
     </div>
 
-    <div class="graphics-section">
+
+
+    
+    <div class="graphics-section" >
         
-      <h3 style="animation-delay: 0.8s;">Highlights</h3>
-      <ul class="icon-list">
+      <div class="patterns" >
+        <svg width="100%" height="100%">
+          <defs>
+            <pattern id="polka-dots" x="0" y="0"                    width="100" height="100"
+                     patternUnits="userSpaceOnUse">
+              <circle fill="#be9ddf" cx="25" cy="25" r="3"></circle>
+            </pattern>  
+             
+            
+          </defs>
+                    
+          <rect x="0" y="0" width="100%" height="100%" fill="url(#polka-dots)"> </rect>
+           
+          
+         
+       <text x="50%" y="60%"  text-anchor="middle"  >
+         Highlights
+       </text>
+       
+       </svg>
+      
+      </div>
+      <br>
+      <ul class="icon-list" >
         <li style="animation-delay: 1s;"><i class="fas fa-trophy"></i> Signed in Indian Idol</li>
         <li style="animation-delay: 1.2s;"><i class="fas fa-globe"></i> Performed in various countries</li>
         <li style="animation-delay: 1.4s;"><i class="fas fa-music"></i> Passionate about creating soulful music</li>
       </ul>
       <hr style="animation-delay: 1.6s;">
-      <h3 style="animation-delay: 1.8s;">Section 1</h3>
-      <p style="animation-delay: 2s;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac ligula id lectus porttitor eleifend nec a leo. Integer maximus ligula vel sagittis lacinia. Donec pellentesque nunc nec libero vestibulum iaculis. Aliquam efficitur tincidunt mi, in posuere est tempus in.</p>
-      <h3 style="animation-delay: 2.2s;">Section 2</h3>
-      <p style="animation-delay: 2.4s;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac ligula id lectus porttitor eleifend nec a leo. Integer maximus ligula vel sagittis lacinia. Donec pellentesque nunc nec libero vestibulum iaculis. Aliquam efficitur tincidunt mi, in posuere est tempus in.</p>
-      <h3 style="animation-delay: 2.6s;">Section 3</h3>
-      <p style="animation-delay: 2.8s;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac ligula id lectus porttitor eleifend nec a leo. Integer maximus ligula vel sagittis lacinia. Donec pellentesque nunc nec libero vestibulum iaculis. Aliquam efficitur tincidunt mi, in posuere est tempus in.</p>
-      <h3 style="animation-delay: 3s;">Section 4</h3>
-      <p style="animation-delay: 3.2s;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac ligula id lectus porttitor eleifend nec a leo. Integer maximus ligula vel sagittis lacinia. Donec pellentesque nunc nec libero vestibulum iaculis. Aliquam efficitur tincidunt mi, in posuere est tempus in.</p>
-      <h3 style="animation-delay: 3.4s;">Section 5</h3>
-      <p style="animation-delay: 3.6s;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac ligula id lectus porttitor eleifend nec a leo. Integer maximus ligula vel sagittis lacinia. Donec pellentesque nunc nec libero vestibulum iaculis. Aliquam efficitur tincidunt mi, in posuere est tempus in.</p>
+      <div class="one">
+        <h1 class="rp-h1">Welcome to Our World</h1>
+      </div>
+      <br> 
+     
+      <p style="animation-delay: 2s;" class="about-pp">Discover the enchanting world of Gurdeep Singh, a renowned singer hailing from Dehradun. With a passion for music and a mesmerizing voice, Gurdeep has captivated audiences worldwide with soul-stirring melodies and captivating performances.</p>
+      <br> <br>
+      <div class="seven">
+        <h1 class="rp-h1">Musical Journey</h1>
+      </div>
+      <p style="animation-delay: 2.4s;" class="about-pp">Embark on a melodic adventure as we take you through Gurdeep Singh's remarkable musical journey. From humble beginnings to performing on prestigious stages and participating in Indian Idol Season 11, Gurdeep's talent and dedication have propelled him to great heights.</p>
+      <br> <br>
+      <div class="twelve">
+        <h1 class="rp-h1">Melodic Journey</h1>
+      </div>
+      <p style="animation-delay: 2.8s;" class="about-pp">Gurdeep Singh is not only a singer but also a versatile artist and music composer. With a keen sense of musicality, he effortlessly weaves emotions into his compositions, creating soulful melodies that touch the hearts of his listeners.</p>
+      <br> <br>
+      <div class="thirteen">
+        <h1 class="rp-h1">Spreading <i class="fa-solid fa-heart" style="color: red;"></i></h1>
+
+      </div>
+      <br>
+      <p style="animation-delay: 3.2s;" class="about-pp">Gurdeep Singh's music has the power to inspire, uplift, and bring people together. Whether it's through performances, collaborations, or philanthropic endeavors, Gurdeep aims to make a positive impact on the world, spreading joy and love through the universal language of music.</p>
+      
     </div>
   </div>
    <!-- Footer Starts -->
