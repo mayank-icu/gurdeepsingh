@@ -86,3 +86,41 @@ $('input').focus(function() {
         time: 10000
     });
 });
+
+// Slider
+
+function isElementInViewport(element) {
+  var rect = element.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
+function handleScroll() {
+  var element = document.getElementById("animationTrigger");
+  if (isElementInViewport(element)) {
+    element.classList.add("animate");
+  }
+}
+
+window.addEventListener("scroll", handleScroll);
+
+
+  // Function to change the navigation menu and logo background color on scroll
+  window.addEventListener('scroll', function() {
+    var navigationMenu = document.querySelector('.main-navigation');
+    var logoContained = document.getElementById('logo-contained');
+    var scrollTop = window.scrollY;
+
+    // Change the background color when the user scrolls down
+    if (scrollTop > 0) {
+        navigationMenu.style.backgroundColor = 'black';
+        logoContained.style.backgroundColor = 'black';
+    } else {
+        navigationMenu.style.backgroundColor = 'transparent';
+        logoContained.style.backgroundColor = 'transparent';
+    }
+});

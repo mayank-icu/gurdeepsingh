@@ -1087,3 +1087,155 @@ margin: 12px auto 0;
     margin-top: 260px;
   }
 }
+
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-300px * 7));
+  }
+}
+
+.slider {
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: auto;
+}
+
+.slider .slide-track {
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(300px * 14);
+}
+
+.slider .slide {
+  height: 100px;
+  width: 250px;
+  margin-right: 50px; /* Added space between images */
+}
+
+
+.slider-logo-h1 {
+  font-size: 40px;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif; /* Replace with your desired business and stylish font */
+  white-space: nowrap; /* Ensures the text stays on a single line */
+  position: relative;
+}
+
+.slider-logo-h1 strong {
+  color: #ff0000; /* Replace with your desired color for <strong> element */
+  font-weight: bold;
+}
+
+.slider-logo-h1 .highlight-animation {
+  position: relative;
+  display: inline-block;
+}
+
+.slider-logo-h1 .highlight-animation::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ff0000; /* Replace with your desired underline color */
+  animation: curly-underline 1s ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes curly-underline {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+
+
+.reels-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.reel {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.reel video {
+  width: 100%;
+  display: block;
+}
+
+@media only screen and (max-width: 768px) {
+  .reels-container {
+      grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+#notable-mentions-heading{
+  font-family: 'Parisienne', cursive;
+  font-size: 3em;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+  background-color: #f7f7f7;
+  margin: 0;
+
+}
+
+@media only screen and (max-width: 600px) {
+  #notable-mentions-heading {
+      font-size: 1.5em;
+      padding: 10px;
+  }
+}
+
+#partner-companies-heading{
+  font-family: 'Dancing Script', cursive;
+  font-size: 3em;
+  color: #5d5d5d;
+  padding: 20px;
+  text-align: center;
+  background-image: linear-gradient(to right, #efefef, #f9f9f9);
+  margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  #partner-companies-heading {
+      font-size: 1.5em;
+      padding: 10px;
+  }
+}
+
+
+.image-conta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F4F4F4;
+  margin-top: -20px;
+}
+.center-ima {
+  max-width: 100%;
+  max-height: 100%;
+}
