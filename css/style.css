@@ -1032,7 +1032,7 @@ margin: 12px auto 0;
 }
 
 .slider .slide-track {
-  animation: scroll 50s linear infinite;
+  animation: scroll 7s linear infinite;
   display: flex;
   width: calc(300px * 14);
 }
